@@ -2,10 +2,8 @@
     margin: 0;
     padding: 0;
 }
-.container{
-    height: 150vh;
-    width: 100%;
-    background: linear-gradient(rgb(8, 8, 8),rgb(247, 247, 247),rgb(94, 80, 39),rgb(255, 255, 255));
+body{
+    background: linear-gradient(45deg,rgb(8, 8, 8),rgb(19, 36, 39),rgb(148, 125, 62),rgb(0, 0, 0));
     background-size: 300% 300%;
     animation: color 10s ease-in-out infinite;
   }
@@ -20,9 +18,31 @@
         background-position: 0 50%;
     }
   }
+.container{
+    height: 150vh;
+    width: 85%;
+    margin: auto;
+    background: linear-gradient(rgb(8, 8, 8),rgb(247, 247, 247),rgb(94, 80, 39),rgb(255, 255, 255));
+    background-size: 300% 300%;
+    animation: color 10s ease-in-out infinite;
+    border-radius: 5%;
+    margin-bottom: 5rem;
+  }
+  @keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+  }
 .sectionOne{
     max-width: 1200px;
-    margin-left: 400px;
+    margin-left: 250px;
+    margin-top: 100px;
     display: flex;    
 }
 .sectionTwo{
@@ -58,7 +78,7 @@ img{
     text-align: justify;
 }
 .style2{
-    margin-left: 5%;
+
     margin-top: 5%;
     display: flex;
     
@@ -89,7 +109,7 @@ button:hover{
     background-color: black;
     width: 50%;
     height: 20rem;
-    transition: transform .2s; /* Animation */
+    transition: transform .2s;
 }
 
 .picsur:hover{
@@ -105,4 +125,11 @@ button:hover{
 .style2 button{
     width: 15rem;
     margin-left: 2rem;
+}
+.title{
+    color: white;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-left: 40%;
+    font-family: monospace;
 }
