@@ -2,9 +2,44 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background: linear-gradient(to right,rgb(8, 8, 8),rgb(19, 36, 39),rgb(148, 125, 62),rgb(0, 0, 0));
+}
+.title{
+    color: white;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-left: 40%;
+    font-family: monospace;
+}
+.description{
+    color: white;
+    text-align: center;
+    font-size:1rem ;
+    margin-top: 2rem;
+    margin-left: 15%;
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 71%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+    typing 3s steps(102),
+    cursor .4s step-end infinite alternate;
+}
+    @keyframes cursor{
+    50% {border-color: transparent}
+}
+    @keyframes typing{
+    from {width:0}
+}
+
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 1%;
     display: flex;
     background-image: linear-gradient(to right, white, pink);
 }
@@ -15,13 +50,14 @@ img{
 }
 .style{
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 10%;
     text-align: justify;
 }
 button{
     background-color: lightcoral;
     color: white;
     size: 1rem;
+    margin-top: 1rem;
     padding: 1rem;
 }
 
