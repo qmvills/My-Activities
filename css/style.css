@@ -27,16 +27,15 @@
   }
 
   .container{
-    height: 80px;
+    height: 10%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     list-style: none;
     background-color:rgb(19, 36, 39);
     margin: 0;
-    padding-right: 5rem;
+    padding-right: 5%;
     
- 
   }
 
   .container:hover{
@@ -46,13 +45,13 @@
     margin-right: 55%;
     text-decoration: none;
     color: #feda6a;
-    font-size: 2rem;
+    font-size: 2%;
     font-weight: bold
     
   }
 
   li{
-    padding-left: 2rem;
+    padding-left: 2%;
   }
 
   a{
@@ -110,6 +109,9 @@
   }
   .info1:hover::before{
     inset:  0px;
+  }
+  span{
+    color:#feda6a;
   }
 
   .me{

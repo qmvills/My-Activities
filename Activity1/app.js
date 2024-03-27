@@ -14,6 +14,6 @@ let myObject = {
 } 
 
 const {title1, paragraph1, myimg, button1, button2, title, paragraph, button3, button4} = myObject
-let container = document.getElementById("container")
-container.append(myFunction(title1,title, paragraph1,paragraph, button1,button2, button3, button4))
-container.append(myimage(myimg))
+let content = document.getElementById("content")
+content.append(myFunction(title1,title, paragraph1,paragraph, button1,button2, button3, button4))
+content.append(myimage(myimg))
