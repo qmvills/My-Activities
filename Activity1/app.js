@@ -17,3 +17,29 @@ const {title1, paragraph1, myimg, button1, button2, title, paragraph, button3, b
 let content = document.getElementById("content")
 content.append(myFunction(title1,title, paragraph1,paragraph, button1,button2, button3, button4))
 content.append(myimage(myimg))
+
+const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
+const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
+const header = document.querySelector('.header.container');
+
+hamburger.addEventListener('click', () => {
+	hamburger.classList.toggle('active');
+	mobile_menu.classList.toggle('active');
+});
+
+document.addEventListener('scroll', () => {
+	var scroll_position = window.scrollY;
+	if (scroll_position > 250) {
+		header.style.backgroundColor = 'black';
+	} else {
+		header.style.backgroundColor = 'black';
+	}
+});
+
+menu_item.forEach((item) => {
+	item.addEventListener('click', () => {
+		hamburger.classList.toggle('active');
+		mobile_menu.classList.toggle('active');
+	});
+});

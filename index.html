@@ -7,32 +7,170 @@
     <link rel ="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class = "container">
-        <div class ="logo"><a href="index.html">Ms. Artsy</a></div>
-        <li><a href = "./WhatIlearn/main.html">What I learn</a></li>
-        <li><a href = "./Activity1/main.html">Ativity 1</a></li>
-        <li><a href = "./Activity2/index.html">Activity 2</a></li>
+      <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>MS.</span> Artsy</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="What I Learn">What I Learn</a></li>
+            <li><a href="#projects" data-after="Activities">My Activities</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#footer" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <main class = "here">
-        <div class="info1"><img src="img/kani.jpg" alt="Villareal, Queen Mary" class= "me"/></div>
-            <h4 class="fs-4">Hi, I am <span>Queen Mary Villareal,</span> GCC Student</h4>
-            <h1 class="title">My Compilation of Activity</h1>
+  </section>
+  <!-- End Header -->
+
+    <!-- Hero Section  -->
+    <section id="hero">
+        <div class="hero container">
+            <video autoplay loop muted play-inline class="bv">
+                <source src="./img/Black and white background Video People walking on street Website slider background Video.mp4" type="video/mp4">
+            </video>
+          <div>
+            <h1>Hi, <span></span></h1>
+            <h1>I am <span></span></h1>
+            <h1>Queen Mary Villareal <span></span></h1>
             <p><b><span>Event Driven Programming</span></b>  -
-                Event programming is quite challenging but kind of fun. However,
-                I don't see myself in the future in the programming field. Still, as part of the requirements
-                of my course, I need to pass this subject. That's why I'm trying my best to comply with the
-                deadlines.
+              Event programming is quite challenging but kind of fun. However,
+              I don't see myself in the future in the programming field. Still, as part of the requirements
+              of my course, I need to pass this subject. That's why I'm trying my best to comply with the
+              deadlines.
             </p>
-            
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/queen-mary-agot-3a9025194/" target="_blank"><img src="img/link.svg" alt="LinkedIn"></a>
-                <a href="https://www.facebook.com/profile.php?id=100090548301650" target="_blank"><img src="img/facebook.svg" alt="Facebook"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.svg" alt="Instagram"></a>
-                <a href="https://github.com/qmvills/" target="_blank"><img src="img/github.svg" alt="Github"></a>
-              </div> 
-            
-    </main>
- 
+          </div>
+        </div>
+      </section>
+      <!-- End Hero Section  -->
+
+        <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">What I Learn</h1>
+        <p>Learning programming showed me how to solve problems logically and be creative.
+          But even though I learned a lot, I'm not sure if I see myself working in this field.
+          Because I prefer managing projects over thinking too much about code.</p>
+      </div>
+      <div class="service-bottom">
+        
+        <div class="service-item">
+          <a href="./WhatIlearn/main.html">
+            <div class="icon"><img src="./img/command.svg" /></div>
+            <h2>Objects</h2>
+            <p> ES6 objects declaration easier to write and understand,
+              especially when creating methods inside the object.</p>
+          </a>
+        </div>
+
+        <div class="service-item">
+          <a href="./WhatIlearn/main.html">
+            <div class="icon"><img src="./img/command.svg" /></div>
+            <h2>Arrow Function</h2>
+            <p>ES6 Arrow Function is simpler, more efficient,  fewer lines, more clarity,  more concise syntax compared to the traditional function.</p>
+          </a>
+        </div>
+        <div class="service-item">
+          <a href="./WhatIlearn/main.html">
+            <div class="icon"><img src="./img/command.svg" /></div>
+            <h2>Destructuring</h2>
+            <p>ES6 destructuring it simplifies the process by directly assigning variables to specific properties of the object.</p>
+          </a>
+        </div>
+        <div class="service-item">
+          <a href="./WhatIlearn/main.html">
+            <div class="icon"><img src="./img/command.svg" /></div>
+            <h2>Import/Export</h2>
+            <p>To bring in functionalities from other files, and export to make functions or variables available for use in other files.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+   <!-- Projects Section -->
+   <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">My<span> Activities</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1><a href = "../Activity1/main.html">Activity1</a></h1>
+            <h2>Coding is Love</h2>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1><a href = "../Activity2/index.html">Activity2</a></h1>
+            <h2>Coding is Love</h2>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/me3.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About<span> me</span></h1>
+        <h2>GCC Student</h2>
+        <p>I love making designs and organizing projects, especially when they involve art.
+          I started studying architecture but had to switch because it was too expensive. So, I shifted to BSIT at USTP, but had to stop during my second year because of money problems.     
+          Then, I moved to Cebu to find work. I ended up working as a bookkeeper for a big cooperative in the Philippines and Coca-Cola Philippines. Along the way, I discovered my passion for design and started freelancing.         
+          After three years in Cebu, I realized something was missing. I knew I needed to finish my studies to get my dream job. That's why I decided to go back to school for me to have a better career perspective in the future.    
+          </p>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+        <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>MS.</span> Artsy</h1>
+      </div>
+      <h2>queenmary.com@gmail.com</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="./img/facebook.svg" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="./img/instagram.svg" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="./img/link.svg" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="./img/github.svg" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
 
 </body>
 </html>

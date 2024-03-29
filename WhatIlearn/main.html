@@ -7,28 +7,47 @@
     <link rel ="stylesheet" href="style.css">
 </head>
 <body>
-    <div class = "container">
-        <div class ="logo"><a href="../index.html">Ms. Artsy</a></div>
-        <li><a href = "../WhatIlearn/main.html">What I learn</a></li>
-        <li><a href = "../Activity1/main.html">Ativity 1</a></li>
-        <li><a href = "../Activity2/index.html">Activity 2</a></li>
-    </div>
+      <!-- Header -->
+      <section id="header">
+        <div class="header container">
+          <div class="nav-bar">
+            <div class="brand">
+              <a href="#hero">
+                <h1><span>MS.</span> Artsy</h1>
+              </a>
+            </div>
+            <div class="nav-list">
+              <div class="hamburger">
+                <div class="bar"></div>
+              </div>
+              <ul>
+                <li><a href="../index.html" data-after="Home">Home</a></li>
+                <li><a href="../index.html#services" data-after="What I Learn">What I Learn</a></li>
+                <li><a href="../index.html#projects" data-after="Activities">My Activities</a></li>
+                <li><a href="../index.html#about" data-after="About">About</a></li>
+                <li><a href="../index.html#footer" data-after="Contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Header -->
     <div class = "content">
         <div class= "learnings">
             <h1>What I learn</h1>
         </div>
         <div class = "here">
             <div class="card1"><img src="img/importandobject.jpg" alt="image1">
-            <a class = "learnings" href = "/Activity1/main.html">Objects</a>
-            <p> Bundles of data and functions.</p></div>
+            <a class = "learnings" href = "https://www.w3schools.com/js/js_es6.asp#mark_entries">Objects Entries</a>
+            <p> Bundles of data and functions. Its like a container that can hold different pieces of information together.</p></div>
             <div class="card1"><img src="img/arrow.jpg" alt="image1">
-            <a class = "learnings" href = "/Activity2/index.html">Arrow Function</a>
-            <p>Concise syntax for JavaScript functions.</p></div>
+            <a class = "learnings" href = "https://www.w3schools.com/js/js_es6.asp#mark_arrow">Arrow Function</a>
+            <p>Concise syntax for JavaScript functions. Its just a shorter way to write functions in JavaScript.</p></div>
             <div class="card1"><img src="img/de.jpg" alt="image1">
-            <a class = "learnings" href = "/Activity2/index.html">Destructuring</a>
-            <p>Unpack values effortlessly in JavaScript.</p></div>
+            <a class = "learnings" href = "https://www.w3schools.com/react/react_es6_destructuring.aspl">React/Destructuring</a>
+            <p>Destructuring in JavaScript allows us to extract specific values from arrays or objects and assign them to variables. It's like making a sandwich where you only take out the ingredients you want to use.</p></div>
             <div class="card1"><img src="img/importandobject.jpg" alt="image1">
-            <a class = "learnings" href = "/Activity2/index.html">Import/Export:</a>
+            <a class = "learnings" href = "https://www.w3schools.com/js/js_es6.asp#mark_modules">Modules</a>
             <p>Share code between files in JavaScript."</p></div>
         </div>
         <div class = "next">
@@ -36,9 +55,33 @@
         <li><a class = "learnings" href = "">DOM</a></li>
         <p>It feels like this idea of how web pages work, with all its moving parts, is just too much. </p>
     </div>
-
     </div>
 
+            <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>MS.</span> Artsy</h1>
+      </div>
+      <h2>queenmary.com@gmail.com</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="#"><img src="./img/facebook.svg" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="./img/instagram.svg" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="./img/link.svg" /></a>
+        </div>
+        <div class="social-item">
+          <a href="#"><img src="./img/github.svg" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Footer -->
+    <script src="./app.js"></script>
     
 </body>
 </html>
