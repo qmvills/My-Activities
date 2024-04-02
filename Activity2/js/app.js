@@ -31,3 +31,31 @@ let sectionTwo = document.getElementById("sectionTwo")
 sectionOne.append(myFunction(title, paragraph, button1))
 sectionOne.append(myimage(myimg))
 sectionTwo.append(myFunction2(title2, p1, p2, p3, p4, paragraph1,paragraph2,paragraph3, paragraph4, button3, button4, button5, button6))
+
+const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
+const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
+const header = document.querySelector('.header.container');
+
+hamburger.addEventListener('click', () => {
+	hamburger.classList.toggle('active');
+	mobile_menu.classList.toggle('active');
+});
+
+document.addEventListener('scroll', () => {
+	var scroll_position = window.scrollY;
+	if (scroll_position > 250) {
+		header.style.backgroundColor = 'black';
+	} else {
+		header.style.backgroundColor = 'black';
+	}
+});
+
+menu_item.forEach((item) => {
+	item.addEventListener('click', () => {
+		hamburger.classList.toggle('active');
+		mobile_menu.classList.toggle('active');
+	});
+});
+
+

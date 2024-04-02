@@ -200,6 +200,7 @@ button{
   size: 1rem;
   margin-top: 1rem;
   padding: 1rem;
+  width: 10%;
 }
 button:hover{
   background-color: #000000;
